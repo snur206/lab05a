@@ -92,7 +92,7 @@ function multiplyArray(multArr) { //eslint-disable-line
   }
   return [finalMultiply, `The numbers ${multArr} have a product of ${finalMultiply}.`];
 } 
-//test
+//test2
 // Here is the test for multiplyArray(); uncomment it to run it
 testMultiplyArray(testArray);
 
