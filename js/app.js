@@ -91,8 +91,8 @@ function multiplyArray(multArr) { //eslint-disable-line
     finalMultiply = multiply(multArr[i], finalMultiply)[0];
   }
   return [finalMultiply, `The numbers ${multArr} have a product of ${finalMultiply}.`];
-}
-
+} 
+//test
 // Here is the test for multiplyArray(); uncomment it to run it
 testMultiplyArray(testArray);
 
