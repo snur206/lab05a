@@ -28,8 +28,7 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiply(a, b) { //eslint-disable-line
-  let product = a*b;
-  return [product, `The product of ${a} and ${b} is ${product}.`];
+  
 }
 
 // Here is the test for multiply(); uncomment it to run it
@@ -50,12 +49,7 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
-  let firstSum = sum(a, b)[0];
-  let finalSum = sum(firstSum, c)[0];
-  let firstProduct = multiply(a,b)[0];
-  let finalProduct = multiply(firstProduct, c)[0];
-  return [finalSum, finalProduct,`${a} and ${b} and ${c} sum to ${finalSum}.` , `The product of ${a} and ${b} and ${c} is ${finalProduct}.`];
-}
+  
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
 testSumAndMultiply(4,7,5);
@@ -75,12 +69,7 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 let testArray = [2, 3, 4]; //eslint-disable-line
 function sumArray(sumArr) { //eslint-disable-line
-  let finalSum = 0;
-  for (let i = 0; sumArr.length > i; i++) {
-    finalSum = sum(sumArr[i], finalSum)[0];
-  }
-  return [finalSum, `${sumArr} was passed in as an array of numbers, and ${finalSum} is their sum.`];
-}
+ 
 // Here is the test for sumArray(); uncomment it to run it
 
 testSumArray(testArray);
@@ -99,13 +88,7 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
-  let finalMultiply = 1;
-  for (let i = 0; multArr.length > i; i++){
-    finalMultiply = multiply(multArr[i], finalMultiply)[0];
-  }
-  return [finalMultiply, `The numbers ${multArr} have a product of ${finalMultiply}.`];
-}
-
+  
 // Here is the test for multiplyArray(); uncomment it to run it
 testMultiplyArray(testArray);
 
@@ -130,13 +113,7 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 let testDynamicArray = [1,2,3,4,5]; //eslint-disable-line
 
-function multiplyAnyArray(dynamicArray) { //eslint-disable-line
-  let finalDynamic = 1; 
-  for (let i = 1; dynamicArray.length > i; i++) {
-    finalDynamic = multiply(dynamicArray[i], finalDynamic)[0];
-  }
-  return [finalDynamic, `The numbers ${dynamicArray} have a product of ${finalDynamic}.`];
-}
+
 
 // Here is the test for multiplyArray(); uncomment it to run it
 testMultiplyAnyArray(testDynamicArray);
